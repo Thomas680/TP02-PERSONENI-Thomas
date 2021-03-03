@@ -1,0 +1,16 @@
+.footer {
+    width: 100%;
+    height: 3rem;
+    background-color: lightgray;
+}
+
+.footer-body {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-body * {
+    padding: 0 1rem;
+}
