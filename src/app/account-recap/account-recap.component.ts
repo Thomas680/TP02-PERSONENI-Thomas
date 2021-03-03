@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccountRecapComponent implements OnInit {
 
+  civilite : string = "";
+  firstname : string = "";
+  name : string = "";
+  address : string = "";
+  postalCode : string = "";
+  city : string = "";
+  country : string = "";
+  phone : number = null;
+  email : string = "";
+  login : string = "";
+
   constructor() { }
 
   ngOnInit(): void {

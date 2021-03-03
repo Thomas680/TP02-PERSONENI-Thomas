@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AccountFormComponent } from './account-form/account-form.component';
 import { AccountRecapComponent } from './account-recap/account-recap.component';
 import { HeaderComponent } from './header/header.component';
+import { InternationalPhoneNumberPipe } from './international-phone-number.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HeaderComponent } from './header/header.component';
     FooterComponent,
     AccountFormComponent,
     AccountRecapComponent,
-    HeaderComponent
+    HeaderComponent,
+    InternationalPhoneNumberPipe
   ],
   imports: [
     BrowserModule,

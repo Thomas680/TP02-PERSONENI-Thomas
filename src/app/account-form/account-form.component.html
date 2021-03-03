@@ -1,5 +1,6 @@
-<form id="main_form" method="post">
-    <div id="form_message"></div>
+<form>
+    <div id="form_message" *ngIf="!passwordValid">Les mots de passe ne correspondent pas.</div>
+    <div id="form_message" *ngIf="submit && !valid">Certains champs ne sont pas correctement rempli.</div>
     <div>
     Civilité :
     </div>
@@ -83,5 +84,7 @@
             <input [(ngModel)]="passwordConfirm" class="form-control" type="password" id="password_confirm" required name="password_confirm">
         </div>
     </div>
-    <button type="submit">Envoyer</button>
+    <button type="button" (click)="sendForm()">Envoyer</button>
 </form>
+
+<div #recapContainer></div>
